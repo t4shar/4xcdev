@@ -1,0 +1,452 @@
+/* GLOBAL CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    color: white;
+    font-family: Roboto;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* HEADER STARTS HERE */
+header {
+    background-color: rgb(12, 17, 21);
+    padding-block: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 25px;
+}
+
+.login-portal svg {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+    vertical-align: middle;
+    stroke-width: 0;
+    stroke: currentcolor;
+    fill: white;
+    box-sizing: content-box;
+}
+
+.login-portal a {
+    font-family: Roboto !important;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    font-size: 14px;
+}
+
+.login-portal:hover a {
+    color: rgb(255, 199, 16);
+}
+
+.login-portal:hover svg {
+    fill: rgb(255, 199, 16);
+}
+
+/* HEADER ENDS HERE */
+
+/* MAIN HEADER STARTS HERE */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.logo img {
+    width: 95px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.list-items {
+    position: relative;
+}
+
+.list-items>a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.list-items svg {
+    width: 1em;
+    height: 1em;
+    transition: transform 0.2s ease 0s;
+    fill: currentcolor;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    width: auto;
+    gap: 30px;
+}
+
+.list-items>span {
+    font-size: 15px;
+}
+
+.btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.primary-btn {
+    border: 1px solid rgb(156, 123, 12);
+    padding: 10px 30px;
+}
+
+.primary-btn:hover {
+    background-color: rgb(255, 199, 16);
+    color: #000;
+}
+
+.secondary-btn {
+    background-color: rgb(0, 170, 170);
+    border: 1px solid rgb(0, 170, 170);
+    display: flex;
+    align-items: center;
+}
+
+.secondary-btn:hover {
+    background-color: transparent;
+}
+
+.secondary-btn svg {
+    fill: #fff;
+    width: 1em;
+    height: 1em;
+    margin-left: 15px;
+}
+
+.external-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* ******* MEGA MENU STARTS HERE  ******* */
+
+.megaMenu {
+    position: absolute;
+    top: 40px;
+    background-color: rgb(12, 17, 21);
+    width: 661px;
+    display: flex;
+    padding: 30px 25px 20px;
+    border-radius: 0px 0px 10px 10px;
+    left: 0;
+}
+
+.megaMenu__items {
+    max-width: calc(33.3333% + 0px);
+    width: calc(33.3333% + 0px);
+    margin-left: 0px;
+    margin-top: 20px !important;
+}
+
+.megaMenu__secondaryItems span {
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.megaMenu__secondaryItems span:hover {
+    background-color: rgb(0 0 0);
+}
+
+.megaMenu__items a {
+    margin-bottom: 15px;
+    display: flex;
+    border-bottom: 1px solid rgba(255, 199, 16, 0.5);
+    padding-bottom: 10px;
+}
+
+.megaMenu__secondaryItems {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ******* MEGA MENU ENDS HERE  ******* */
+
+/* MAIN HEADER ENDS HERE */
+
+/* HERO BANNER */
+
+.heroVideo video {
+    z-index: -1;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    box-sizing: border-box !important;
+    height: 56.25vw !important;
+    min-height: 100% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 100%;
+    max-width: none !important;
+    display: inline-block;
+    vertical-align: baseline;
+    object-fit: none;
+}
+
+.heroVideo_content h1 {
+    font-size: 60px;
+    text-transform: capitalize;
+}
+
+.heroVideo_content {
+    width: 450px;
+    z-index: 9;
+    position: relative;
+}
+
+.heroVideo_content p {
+    margin-block: 30px;
+    font-size: 18px;
+    line-height: 1.4em
+}
+
+.heroBanner {
+    background-image: linear-gradient(0deg, rgba(12, 17, 21, 0) 79%, rgb(12, 17, 21) 100%), linear-gradient(90deg, rgb(12, 17, 21) 16%, rgba(12, 17, 21, 0) 30%), linear-gradient(0deg, rgb(12, 17, 21) 0%, rgba(12, 17, 21, 0.3) 50%, rgba(12, 17, 21, 0) 65%);
+    position: relative;
+    padding: 120px 0px 60px;
+}
+
+.bannerButtonIcon svg.tcb-icon.tcb-local-vars-root {
+    height: 1em;
+}
+
+span.bannerButtonIcon {
+    display: flex;
+    align-items: center;
+}
+
+.heroVideo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    box-sizing: border-box;
+    transition: box-shadow 0.5s ease 0s;
+    overflow: hidden;
+}
+
+.feature {
+    border: 1px solid rgb(116, 116, 116);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.heroBanner_features {
+    padding-top: 100px;
+}
+
+.features__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+p.feature_heading {
+    color: rgb(255, 199, 16);
+    font-size: 15px;
+    font-family: Roboto;
+    font-weight: normal;
+}
+
+.feature_icon i {
+    font-size: 35px;
+}
+
+
+/* DOWNLOAD SECTION STARTS */
+section.download {
+    padding-block: 60px;
+    position: relative;
+}
+
+.download_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    box-sizing: border-box;
+    transition: box-shadow 0.5s ease 0s;
+    overflow: hidden;
+    background-image: linear-gradient(rgb(12, 17, 21) 0%, rgba(12, 17, 21, 0.8) 50%, rgba(12, 17, 21, 0.5) 100%), linear-gradient(0deg, rgba(12, 17, 21, 0) 0%, rgba(12, 17, 21, 0.8) 50%, rgba(12, 17, 21, 0.5) 100%);
+    z-index: -1;
+}
+
+.download_content {
+    text-align: center;
+}
+
+.download_content h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.download_content p {
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.download_cardlinks a {
+    display: inline;
+}
+
+.download_cardlinks svg {
+    height: 30px;
+    fill: #fff;
+    width: 30px;
+}
+
+.download_cardlinks svg:hover {
+    fill: rgb(255, 199, 16);
+}
+
+.download_cards {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 13px 13px 12px 0px;
+    border-radius: 10px;
+}
+
+.download_partition {
+    display: flex;
+    gap: 20px;
+}
+
+.donwload_channelCards {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgb(106, 107, 108);
+}
+
+.download_rightContent,
+.download_leftImages {
+    width: 50%;
+}
+
+.download_cards {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 13px 13px 12px 0px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.download_cardPara {
+    font-size: 13px;
+    line-height: 1.4em;
+    color: rgb(252, 252, 252);
+    font-weight: 300;
+}
+
+.download_cardHeading {
+    font-size: 18px;
+    color: rgb(252, 252, 252);
+    font-weight: 300;
+}
+
+.download_cardlinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.download_learnMore {
+    text-align: center;
+    padding-block: 50px;
+    border-bottom: 1px solid rgb(106, 107, 108);
+    padding-bottom: 20px;
+}
+
+.learnMore {
+    margin: 20px auto;
+    border: 1px solid rgb(255, 199, 16);
+    background-color: rgb(255, 199, 16);
+    color: #000;
+}
+
+.download_icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.download_icons i {
+    font-size: 35px;
+}
+
+.download_icons .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download_icons .flex p {
+    font-size: 13px
+}
+
+/* DOWNLOAD SECTION ENDS */
+
+.pdf_chart {
+    padding-block: 80px;
+    width: 100%;
+}
+
+.pdf_chart object {
+    width: 100%;
+    height: 100%;
+}

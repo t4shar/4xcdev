@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css?family=Roboto%3A400%2C700%2C300%2C500%7CMuli%3A400%2C600%2C300%2C800%2C700%2C200%2C900%7CSource%20Sans%20Pro%3A400%2C600%7CRoboto%3A300%2C700%2C400%2C500%2C100%2C900&#038;subset=latin&#038;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto%3A400%2C700%2C300%2C500%7CMuli%3A400%2C600%2C300%2C800%2C700%2C200%2C900%7CSource%20Sans%20Pro%3A400%2C600%7CRoboto%3A300%2C700%2C400%2C500%2C100%2C900&#038;subset=latin&#038;display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link rel="stylesheet" href="/Index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <!-- Top Header -->
+        <div class="top-header">
+          <!-- Language Selector ----- We need to language selector -->
+          <div class="language-selector">Language</div>
+          <div class="login-portal">
+            <!-- Login Logo -->
+            <svg
+              class="tcb-icon tcb-local-vars-root"
+              viewBox="0 0 448 512"
+              data-id="icon-user-astronaut-solid"
+              data-name=""
+            >
+              <path
+                d="M64 224h13.5c24.7 56.5 80.9 96 146.5 96s121.8-39.5 146.5-96H384c8.8 0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-13.5C345.8 39.5 289.6 0 224 0S102.2 39.5 77.5 96H64c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16zm40-88c0-22.1 21.5-40 48-40h144c26.5 0 48 17.9 48 40v24c0 53-43 96-96 96h-48c-53 0-96-43-96-96v-24zm72 72l12-36 36-12-36-12-12-36-12 36-36 12 36 12 12 36zm151.6 113.4C297.7 340.7 262.2 352 224 352s-73.7-11.3-103.6-30.6C52.9 328.5 0 385 0 454.4v9.6c0 26.5 21.5 48 48 48h80v-64c0-17.7 14.3-32 32-32h128c17.7 0 32 14.3 32 32v64h80c26.5 0 48-21.5 48-48v-9.6c0-69.4-52.9-125.9-120.4-133zM272 448c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16-7.2-16-16-16zm-96 0c-8.8 0-16 7.2-16 16v48h32v-48c0-8.8-7.2-16-16-16z"
+              ></path>
+            </svg>
+            <a href="/">Login</a>
+          </div>
+        </div>
+        <!-- Main Header -->
+        <div class="main-header">
+          <div class="logo">
+            <img src="../../Media/Logo/logo.png" />
+          </div>
+          <div class="navbar">
+            <nav>
+              <ul>
+                <li class="list-items">
+                  <a href="">
+                    <span class="">Trade</span>
+                    <span class="navbar_dropDownIcon">
+                      <svg class="tve-dropdown-icon-up" viewBox="0 0 320 512">
+                        <path
+                          d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </a>
+                  <!-- Mega Menu -->
+                  <!-- <div class="megaMenu">
+                  <div class="megaMenu__items">
+                    <a href="">
+                      <span>Instruments</span>
+                    </a>
+                    <div class="megaMenu__secondaryItems">
+                      <span>Forex</span>
+                      <span>Metals</span>
+                      <span>Index CFDs and Oil</span>
+                      <span>Cryptos</span>
+                      <span>Forward Contracts</span>
+                    </div>
+                  </div>
+                  <div class="megaMenu__items">
+                    <a href="">
+                      <span>Accounts</span>
+                    </a>
+                    <div class="megaMenu__secondaryItems">
+                      <span>Pro</span>
+                      <span>Standard</span>
+                      <span>VIP</span>
+                    </div>
+                  </div>
+                  <div class="megaMenu__items">
+                    <a href="">
+                      <span>Trading Promos</span>
+                    </a>
+                    <div class="megaMenu__secondaryItems">
+                      <span>First Deposit Bonus</span>
+                    </div>
+                  </div>
+                </div> -->
+                </li>
+                <li class="list-items">
+                  <a href="">
+                    <span class="">Resources</span>
+                    <span class="navbar_dropDownIcon">
+                      <svg class="tve-dropdown-icon-up" viewBox="0 0 320 512">
+                        <path
+                          d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li class="list-items">
+                  <a href="">
+                    <span class="">Learn</span>
+                    <span class="navbar_dropDownIcon">
+                      <svg class="tve-dropdown-icon-up" viewBox="0 0 320 512">
+                        <path
+                          d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li class="list-items">
+                  <a href="">
+                    <span class="">Partner</span>
+                    <span class="navbar_dropDownIcon">
+                      <svg class="tve-dropdown-icon-up" viewBox="0 0 320 512">
+                        <path
+                          d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li class="list-items">
+                  <a href="">
+                    <span class="">About</span>
+                    <span class="navbar_dropDownIcon">
+                      <svg class="tve-dropdown-icon-up" viewBox="0 0 320 512">
+                        <path
+                          d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="external-links">
+            <a href="" class="btn primary-btn">Demo Account</a>
+            <a href="" class="btn secondary-btn"
+              >Live Account
+              <svg
+                class="tcb-icon"
+                viewBox="0 0 512 512"
+                data-id="icon-arrow-alt-circle-right-solid"
+                data-name=""
+              >
+                <path
+                  d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zM140 300h116v70.9c0 10.7 13 16.1 20.5 8.5l114.3-114.9c4.7-4.7 4.7-12.2 0-16.9l-114.3-115c-7.6-7.6-20.5-2.2-20.5 8.5V212H140c-6.6 0-12 5.4-12 12v64c0 6.6 5.4 12 12 12z"
+                ></path></svg
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- BANNER SECTION STARTS -->
+      <section class="heroBanner">
+        <div class="container">
+          <div class="heroVideo">
+            <video
+              playsinline=""
+              autoplay=""
+              muted=""
+              loop=""
+              class="tcb-bg-video"
+              data-title="hero_vid"
+              data-id="45372"
+            >
+              <source
+                src="https://4xc.com/wp-content/uploads/2023/09/hero_vid.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <div class="heroVideo_content">
+            <h1>Out of this <br />world <span>trading</span></h1>
+            <p>
+              Boost your trading with unmatched trading conditions and take your
+              trading to the next level.
+            </p>
+            <a href="#" class="bannerButton">
+              <span class="bannerButtonIcon">
+                <svg
+                  class="tcb-icon tcb-local-vars-root"
+                  viewBox="0 0 24 24"
+                  data-id="icon-star-circle-solid"
+                  data-name=""
+                  style=""
+                >
+                  <path
+                    d="M16.23,18L12,15.45L7.77,18L8.89,13.19L5.16,9.96L10.08,9.54L12,5L13.92,9.53L18.84,9.95L15.11,13.18L16.23,18M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"
+                  ></path>
+                </svg>
+                <span class="bannerButtonText">
+                  <p>50% First Deposit bonus</p>
+                </span></span
+              >
+            </a>
+            <span class="bannerAccountRegister">
+              Don’t have an account yet?
+              <a href="#">Register today</a>
+            </span>
+          </div>
+          <div class="heroBanner_features">
+            <div class="features__wrapper">
+              <div class="highLeverage feature">
+                <div class="feature_icon">
+                  <i class="fa-solid fa-chart-simple"></i>
+                </div>
+                <div class="feature_content">
+                  <p class="feature_heading">High Leverage</p>
+                  <p class="feature_para">
+                    Maximize trades with up to 1:500 leverage for earning
+                    potential
+                  </p>
+                </div>
+              </div>
+              <div class="lowComission feature">
+                <div class="feature_icon">
+                  <i class="fa-solid fa-coins"></i>
+                </div>
+                <div class="feature_content">
+                  <p class="feature_heading">Low Commissions</p>
+                  <p class="feature_para">
+                    With no dealing desk, our spreads start at 0.0 pips.
+                  </p>
+                </div>
+              </div>
+              <div class="fastExecution feature">
+                <div class="feature_icon">
+                  <i class="fa-solid fa-file-export"></i>
+                </div>
+                <div class="feature_content">
+                  <p class="feature_heading">Fast Execution</p>
+                  <p class="feature_para">
+                    Powered by lightning-fast servers in LD4 data-centers.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- BANNER SECTION ENDS -->
+
+      <!-- DOWNLOAD SECTION STARTS -->
+      <section class="download">
+        <div class="download_overlay"></div>
+        <div class="container">
+          <div class="download_content">
+            <h2 class="download_heading">The Industry Standard</h2>
+            <p class="download_para">
+              Trade with the world's leading platforms, MT4 and MT5, and access
+              a diverse range of assets across multiple markets.
+            </p>
+          </div>
+          <div class="download_partition">
+            <div class="download_leftImages">
+              <img
+                src="/Media/donwloadsection/Homepage_MT4_mobiles-1-768x879.webp"
+                alt="Mobile Phones"
+              />
+            </div>
+            <div class="download_rightContent">
+              <div class="donwload_channelCards">
+                <div class="download_cards">
+                  <h4 class="download_cardHeading">Download MT4</h4>
+                  <p class="download_cardPara">
+                    Our MT4 includes 60 Currency pairs, 2 Metals, 11 Index CFDs,
+                    2 Crude Oil and 5 Digital Assets.
+                  </p>
+                  <div class="download_cardlinks">
+                    <a href="https://4xc.com/trading-platforms/webtrader/">
+                      <svg
+                        class="tcb-icon tcb-local-vars-root"
+                        viewBox="0 0 448 512"
+                        data-id="tve-icm-636e17b93a184-windows-brands"
+                        data-name=""
+                        style=""
+                      >
+                        <path
+                          d="M0 93.7l183.6-25.3v177.4H0V93.7zm0 324.6l183.6 25.3V268.4H0v149.9zm203.8 28L448 480V268.4H203.8v177.9zm0-380.6v180.1H448V32L203.8 65.7z"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a href="https://download.mql5.com/cdn/mobile/mt4/android">
+                      <svg
+                        class="tcb-icon tcb-local-vars-root"
+                        viewBox="0 0 24 24"
+                        data-id="tve-icm-636e17b93a184-android-debug-bridge-solid"
+                        data-name=""
+                        style=""
+                      >
+                        <path
+                          d="M15,9A1,1 0 0,1 14,8A1,1 0 0,1 15,7A1,1 0 0,1 16,8A1,1 0 0,1 15,9M9,9A1,1 0 0,1 8,8A1,1 0 0,1 9,7A1,1 0 0,1 10,8A1,1 0 0,1 9,9M16.12,4.37L18.22,2.27L17.4,1.44L15.09,3.75C14.16,3.28 13.11,3 12,3C10.88,3 9.84,3.28 8.91,3.75L6.6,1.44L5.78,2.27L7.88,4.37C6.14,5.64 5,7.68 5,10V11H19V10C19,7.68 17.86,5.64 16.12,4.37M5,16C5,19.86 8.13,23 12,23A7,7 0 0,0 19,16V12H5V16Z"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a href="https://4xc.com/trading-platforms/webtrader/">
+                      <svg
+                        class="tcb-icon tcb-local-vars-root"
+                        viewBox="0 0 24 24"
+                        data-id="icon-web-solid"
+                        data-name=""
+                        style=""
+                      >
+                        <path
+                          d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://download.mql5.com/cdn/mobile/mt4/ios?server=4xCube-Demo,4xCube-Live"
+                    >
+                      <svg
+                        class="tcb-icon tcb-local-vars-root"
+                        viewBox="0 0 24 24"
+                        data-id="icon-apple-ios-solid"
+                        data-name=""
+                        style=""
+                      >
+                        <path
+                          d="M2.09 16.8H3.75V9.76H2.09M2.92 8.84C3.44 8.84 3.84 8.44 3.84 7.94C3.84 7.44 3.44 7.04 2.92 7.04C2.4 7.04 2 7.44 2 7.94C2 8.44 2.4 8.84 2.92 8.84M9.25 7.06C6.46 7.06 4.7 8.96 4.7 12C4.7 15.06 6.46 16.96 9.25 16.96C12.04 16.96 13.8 15.06 13.8 12C13.8 8.96 12.04 7.06 9.25 7.06M9.25 8.5C10.96 8.5 12.05 9.87 12.05 12C12.05 14.15 10.96 15.5 9.25 15.5C7.54 15.5 6.46 14.15 6.46 12C6.46 9.87 7.54 8.5 9.25 8.5M14.5 14.11C14.57 15.87 16 16.96 18.22 16.96C20.54 16.96 22 15.82 22 14C22 12.57 21.18 11.77 19.23 11.32L18.13 11.07C16.95 10.79 16.47 10.42 16.47 9.78C16.47 9 17.2 8.45 18.28 8.45C19.38 8.45 20.13 9 20.21 9.89H21.84C21.8 8.2 20.41 7.06 18.29 7.06C16.21 7.06 14.73 8.21 14.73 9.91C14.73 11.28 15.56 12.13 17.33 12.53L18.57 12.82C19.78 13.11 20.27 13.5 20.27 14.2C20.27 15 19.47 15.57 18.31 15.57C17.15 15.57 16.26 15 16.16 14.11H14.5Z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="download_cards">
+                  <h4 class="download_cardHeading">Download MT5</h4>
+                  <p class="download_cardPara">
+                    Our MT5 includes 60 Currency pairs, 2 Metals, 11 Index CFDs,
+                    2 Crude Oil, 5 Digital Assets and 2 Forward contracts.
+                  </p>
+                  <div class="download_cardlinks">
+                    <a
+                      href="https://download.mql5.com/cdn/web/16268/mt5/4xcube5setup.exe"
+                    >
+                      <svg
+                        class="tcb-icon tcb-local-vars-root"
+                        viewBox="0 0 448 512"
+                        data-id="tve-icm-636e17b93a184-windows-brands"
+                        data-name=""
+                        style=""
+                      >
+                        <path
+                          d="M0 93.7l183.6-25.3v177.4H0V93.7zm0 324.6l183.6 25.3V268.4H0v149.9zm203.8 28L448 480V268.4H203.8v177.9zm0-380.6v180.1H448V32L203.8 65.7z"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://download.mql5.com/cdn/mobile/mt5/android?server=4xCube-MT5"
+                    >
+                      <svg
+                        class="tcb-icon tcb-local-vars-root"
+                        viewBox="0 0 24 24"
+                        data-id="tve-icm-636e17b93a184-android-debug-bridge-solid"
+                        data-name=""
+                        style=""
+                      >
+                        <path
+                          d="M15,9A1,1 0 0,1 14,8A1,1 0 0,1 15,7A1,1 0 0,1 16,8A1,1 0 0,1 15,9M9,9A1,1 0 0,1 8,8A1,1 0 0,1 9,7A1,1 0 0,1 10,8A1,1 0 0,1 9,9M16.12,4.37L18.22,2.27L17.4,1.44L15.09,3.75C14.16,3.28 13.11,3 12,3C10.88,3 9.84,3.28 8.91,3.75L6.6,1.44L5.78,2.27L7.88,4.37C6.14,5.64 5,7.68 5,10V11H19V10C19,7.68 17.86,5.64 16.12,4.37M5,16C5,19.86 8.13,23 12,23A7,7 0 0,0 19,16V12H5V16Z"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a href="https://4xc.com/trading-platforms/webtrader5/">
+                      <svg
+                        class="tcb-icon tcb-local-vars-root"
+                        viewBox="0 0 24 24"
+                        data-id="icon-web-solid"
+                        data-name=""
+                        style=""
+                      >
+                        <path
+                          d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://download.mql5.com/cdn/mobile/mt5/ios?server=4xCube-MT5"
+                    >
+                      <svg
+                        class="tcb-icon tcb-local-vars-root"
+                        viewBox="0 0 24 24"
+                        data-id="icon-apple-ios-solid"
+                        data-name=""
+                        style=""
+                      >
+                        <path
+                          d="M2.09 16.8H3.75V9.76H2.09M2.92 8.84C3.44 8.84 3.84 8.44 3.84 7.94C3.84 7.44 3.44 7.04 2.92 7.04C2.4 7.04 2 7.44 2 7.94C2 8.44 2.4 8.84 2.92 8.84M9.25 7.06C6.46 7.06 4.7 8.96 4.7 12C4.7 15.06 6.46 16.96 9.25 16.96C12.04 16.96 13.8 15.06 13.8 12C13.8 8.96 12.04 7.06 9.25 7.06M9.25 8.5C10.96 8.5 12.05 9.87 12.05 12C12.05 14.15 10.96 15.5 9.25 15.5C7.54 15.5 6.46 14.15 6.46 12C6.46 9.87 7.54 8.5 9.25 8.5M14.5 14.11C14.57 15.87 16 16.96 18.22 16.96C20.54 16.96 22 15.82 22 14C22 12.57 21.18 11.77 19.23 11.32L18.13 11.07C16.95 10.79 16.47 10.42 16.47 9.78C16.47 9 17.2 8.45 18.28 8.45C19.38 8.45 20.13 9 20.21 9.89H21.84C21.8 8.2 20.41 7.06 18.29 7.06C16.21 7.06 14.73 8.21 14.73 9.91C14.73 11.28 15.56 12.13 17.33 12.53L18.57 12.82C19.78 13.11 20.27 13.5 20.27 14.2C20.27 15 19.47 15.57 18.31 15.57C17.15 15.57 16.26 15 16.16 14.11H14.5Z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="download_learnMore">
+                <p class="">
+                  Enhance your MT4 and MT5 <br />
+                  <strong>Premium AI Powered Tools</strong>
+                </p>
+                <a href="" class="btn primary-btn learnMore">Learn More</a>
+              </div>
+              <div class="download_icons">
+                <div class="forex flex">
+                  <i class="fa-solid fa-chart-simple"></i>
+                  <p>Forex</p>
+                </div>
+                <div class="metals flex">
+                  <i class="fa-solid fa-chart-simple"></i>
+                  <p>Metals</p>
+                </div>
+                <div class="Cryptos flex">
+                  <i class="fa-solid fa-chart-simple"></i>
+                  <p>Cryptos</p>
+                </div>
+                <div class="Index CFDs & Oil flex">
+                  <i class="fa-solid fa-chart-simple"></i>
+                  <p>Index CFDs & Oil</p>
+                </div>
+                <div class="FWD Contracts flex">
+                  <i class="fa-solid fa-chart-simple"></i>
+                  <p>FWD Contracts</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- DOWNLOAD SECTION ENDS -->
+    </main>
+    <script
+      src="https://kit.fontawesome.com/2d5cd6329c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
